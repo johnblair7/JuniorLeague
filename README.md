@@ -27,11 +27,11 @@ This is a local desktop application that runs on your machine. No web hosting ne
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the application (runs locally at http://localhost:5000)
+# Run the application (runs locally at http://localhost:5001)
 python app.py
 ```
 
-Just open http://localhost:5000 in your browser and you're good to go!
+Just open http://localhost:5001 in your browser and you're good to go!
 
 ## Project Structure
 
