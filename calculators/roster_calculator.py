@@ -9,7 +9,7 @@ from datetime import datetime
 class RosterCalculator:
     """Calculates roster information and cap compliance"""
     
-    LEAGUE_BUDGET = 260  # Standard 10-team fantasy league budget
+    LEAGUE_BUDGET = 280  # Junior League auction budget
     
     def calculate_team_info(self, team, players: List, contracts: List) -> Dict:
         """
