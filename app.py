@@ -65,7 +65,7 @@ def calculate_bid():
     player_name = data.get('player_name')
     
     # Get historical data
-    historical = HistoricalAuction.query.filter_by(player_name=player_name).all()
+    historical = HistoricalAuction.query.filter_by(player_id=player_id).all()
     
     # Get projected stats
     projected = ProjectedStats.query.filter_by(player_id=player_id).first()
