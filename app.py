@@ -100,7 +100,7 @@ def players():
     
     elif request.method == 'POST':
         data = request.json
-        player = Player(name=data['name'], position=data.get('position'), team=data.get('team'))
+        player = Player(name=data['name'], position=data.get('position'), mlb_team=data.get('team'))
         db.session.add(player)
         db.session.commit()
         return jsonify({'id': player.id, 'name': player.name})
@@ -144,5 +144,5 @@ def live_bid():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port=5000)
+    app.run(debug=True, host='127.0.0.1', port=5001)
 

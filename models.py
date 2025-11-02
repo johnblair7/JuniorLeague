@@ -17,8 +17,8 @@ class Team(db.Model):
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     
     # Relationships
-    players = db.relationship('Player', backref='team', lazy=True)
-    auction_bids = db.relationship('AuctionBid', backref='team', lazy=True)
+    players = db.relationship('Player', backref='roster_team', lazy=True)
+    auction_bids = db.relationship('AuctionBid', backref='bid_team', lazy=True)
     
     def __repr__(self):
         return f'<Team {self.name}>'
@@ -31,7 +31,7 @@ class Player(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     position = db.Column(db.String(50))  # e.g., "OF", "SP", "C"
-    team = db.Column(db.String(10))  # MLB team abbreviation
+    mlb_team = db.Column(db.String(10))  # MLB team abbreviation
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     
     # Roster information
