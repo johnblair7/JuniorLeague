@@ -1,0 +1,9 @@
+year,player_name,position,salary,contract_type,team_name,mlb_team
+2023,Mike Trout,OF,45,auction_keeper,Blue Jays,LAA
+2023,Aaron Judge,OF,42,auction_keeper,Yankees,NYY
+2023,Mookie Betts,OF,38,auction_keeper,Dodgers,LAD
+2023,Juan Soto,OF,35,auction_keeper,Padres,SD
+2022,Ronald Acuña,OF,40,auction_keeper,Braves,ATL
+2022,Vladimir Guerrero Jr,1B,28,in_season,Blue Jays,TOR
+2023,Shohei Ohtani,SP,52,rotation,Angels,LAA
+

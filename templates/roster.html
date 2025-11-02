@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roster Manager - JuniorLeague</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>👥 Roster Manager</h1>
+            <a href="/" class="back-link">← Back to Home</a>
+        </header>
+
+        <div class="teams-grid">
+            {% for team in teams %}
+            <div class="team-card">
+                <h2>{{ team.name }}</h2>
+                <p class="owner">{{ team.owner }}</p>
+                <div class="team-stats">
+                    <div class="stat">
+                        <span class="stat-label">Budget Used:</span>
+                        <span class="stat-value">$TBD</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Roster:</span>
+                        <span class="stat-value">0 players</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="card">
+            <h2>Add Team</h2>
+            <input type="text" id="team-name" placeholder="Team Name">
+            <input type="text" id="owner-name" placeholder="Owner Name">
+            <button onclick="addTeam()" class="btn">Add Team</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/roster.js') }}"></script>
+</body>
+</html>
+

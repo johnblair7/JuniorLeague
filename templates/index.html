@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuniorLeague - Fantasy Baseball Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚾ JuniorLeague</h1>
+            <p class="subtitle">Fantasy Baseball Auction & Roster Calculator</p>
+        </header>
+
+        <nav>
+            <a href="/" class="nav-link active">Home</a>
+            <a href="/auction" class="nav-link">Auction Calculator</a>
+            <a href="/roster" class="nav-link">Roster Manager</a>
+        </nav>
+
+        <main>
+            <div class="card">
+                <h2>Welcome to JuniorLeague!</h2>
+                <p>Your one-stop tool for managing your fantasy baseball keeper league.</p>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🧮 Auction Calculator</h3>
+                    <p>Get intelligent bidding recommendations based on historical data and projections.</p>
+                    <a href="/auction" class="btn">Open Calculator</a>
+                </div>
+
+                <div class="feature-card">
+                    <h3>👥 Roster Manager</h3>
+                    <p>Track your team, salaries, contracts, and remaining budget.</p>
+                    <a href="/roster" class="btn">Manage Rosters</a>
+                </div>
+
+                <div class="feature-card">
+                    <h3>📊 Live Auction Tracking</h3>
+                    <p>Update bids in real-time during your auction.</p>
+                    <a href="/auction" class="btn">Start Tracking</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Getting Started</h2>
+                <ol>
+                    <li>Click "Initialize Database" to set up your league</li>
+                    <li>Upload your historical auction data</li>
+                    <li>Add your 10 teams</li>
+                    <li>Start calculating!</li>
+                </ol>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 JuniorLeague - Built for keeper leagues</p>
+        </footer>
+    </div>
+</body>
+</html>
+
