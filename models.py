@@ -30,6 +30,7 @@ class Player(db.Model):
     
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
+    fangraphs_id = db.Column(db.Integer, unique=True, nullable=True)  # Fangraphs player ID
     position = db.Column(db.String(50))  # e.g., "OF", "SP", "C"
     mlb_team = db.Column(db.String(10))  # MLB team abbreviation
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
